@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check
+        if the current number is odd or even, and display the message to the screen as odd
+        or even</title>
+</head>
+<body>
+    <h2 id = "Look at Console" ></h2>
+    <center><input type="button" value="Go to Console" onclick="oddeven()"></center>
+    <script>
+     function oddeven() 
+         {
+             for (var x=0; x<=15; x++)
+          {
+              if (x === 0)
+               {
+                console.log(x +  " is even");
+               }
+        else if (x % 2 === 0)
+              {
+                console.log(x + " is even");   
+                document.getElementById("Look at Console").innerHTML ;
+              }
+        else {
+                console.log(x + " is odd");
+                document.getElementById("Look at Console").innerHTML;
+
+               }
+            }
+        }
+      
+    </script>
+</body>
+</html>

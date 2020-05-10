@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program using for…in to read the objects from an array entered
+        by an user and to arrange it in alphabetical order.</title>
+</head>
+<body>
+    <script>
+       
+
+  function letter_sort(letters) { 
+    var i = 0, j; 
+    while (i < letters.length) { 
+        j = i + 1; 
+        while (j < letters.length) { 
+            if (letters[j] < letters[i]) { 
+                var temp = letters[i]; 
+                letters[i] = letters[j]; 
+                letters[j] = temp; 
+            } 
+            j++; 
+        } 
+        i++; 
+    } 
+} 
+var letters = ["Apple", "Mango", "Biscuit", "Orange", "icecream"]; 
+document.write("Original String</br>"); 
+document.write(letters);     
+document.write("</br>"); 
+letter_sort(letters);   
+document.write("</br>After sorting</br>");   
+document.write(letters); 
+</script>                                    
+</body>
+</html>

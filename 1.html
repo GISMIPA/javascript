@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript function to get an array and to read the first element of an array. Check whether it is prime or not. </title>
+</head>
+<body>
+    <h2 id = "Check" ></h2>
+    <center><input type="button" value="check" onclick="primeornot()"></center>
+    <script>
+      
+	function primeornot()
+	{
+        let set = [2,3,5,7,11,20];
+        let f = set[0];
+        var i,flag=true;
+    for(i=2; i <= f/2; ++i)
+		{
+			if(f%i == 0)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if(flag == true)
+		{
+			document.getElementById("Check").innerHTML = f + "is prime number"
+		}
+		else
+		{
+			document.getElementById("Check").innerHTML = f + "is not prme number"
+		}
+	}
+</script>
+</body>
+</html>
